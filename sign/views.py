@@ -18,9 +18,9 @@ def login_action(request):
         user = auth.authenticate(username=username,password=password)
         if username is not None:
             auth.login(request,user)
+            request.session['user'] = username  # 将session 信息记录到浏览器
             response = HttpResponseRedirect("/event_manage/")
             # response.set_cookie("user", username, 3600)  # 添加浏览器cookie
-            request.session['user'] = username  # 将session 信息记录到浏览器
             return response
         else:
             return render(request, "index.html", {"error": "username or password is error!"})

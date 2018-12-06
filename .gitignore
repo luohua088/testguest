@@ -1,7 +1,7 @@
 #PyCharm
 
 ./.gitignore
-.idea
+.idea/
 */__pycache__/
 */migrations/
 ./venv

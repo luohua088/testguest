@@ -1,0 +1,6 @@
+#PyCharm
+
+./.gitignore
+.idea
+*/__pycache__/
+*/migrations/

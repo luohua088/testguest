@@ -24,4 +24,5 @@ urlpatterns = [
     url('index/$', views.index),  # 添加index/路径配置
     url(r'^login_action/$', views.login_action),  #登录路径
     url(r'^event_manage/$',views.event_manage), #发布会管理路径
+    url(r'search_name/$',views.search_name)
 ]
